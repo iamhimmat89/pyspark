@@ -1,7 +1,9 @@
 # Spark Examples in Python (pyspark)
 
 ## **Spark Core**
+
 1.	**SparkContext**
+
 	- 	Parallelized Collections
 	- 	External Datasets
 		- 	textFile
@@ -10,6 +12,7 @@
 	-	addFile 
 
 2.	**Resilient Distributed Datasets (RDDs)**
+
 	-	Passing function to RDD
 	-	aggregate
 	-	aggregateByKey
@@ -31,12 +34,25 @@
 	-	Set Operations - cartesian, intersection, union
 	-	zip
 	
-		
+	
 ## **Spark SQL**
 
+	- 	DF - JSON
+	-	Converting existing RDDs into Datasets
+		-	Inferring the schema
+		-	Specifying the schema
+	-	Load and Save
+	-	Bucket, Sort and Partition
+	-	DF - Parquet
+	-	Register UDF
+	-	explain
+	-	fillna
+	-	select, filter, groupBy
+	-	createOrReplaceTempView
+	-	createGlobalTempView
+	
 
-
-## **Spark Streaming**
+## **Structured Streaming**
 
 
 
