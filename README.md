@@ -35,7 +35,7 @@
 	-	zip
 	
 	
-## **Spark SQL**
+## 	**Spark SQL**
 
 	- 	DF - JSON
 	-	Converting existing RDDs into Datasets
