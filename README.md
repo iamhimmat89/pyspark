@@ -35,7 +35,9 @@
 	-	zip
 	
 	
-## 	**Spark SQL**
+## **Spark SQL**
+
+1. 	DataFrame & Datasets
 
 	- 	DF - JSON
 	-	Converting existing RDDs into Datasets
