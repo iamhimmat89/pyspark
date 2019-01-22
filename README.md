@@ -10,7 +10,7 @@ Performance Checklist:
 	3.	Degree of paralleliem - lines.coalesce(5)
 	4. 	Choice of serializer (bottleneck when shuffling or caching) - use Kryo or pickle in python
 	5.	Caching format - memory_only or memory_only_ser 
-		-	try avoid disk
+		-	try to avoid disk
 	6.	Compression conf.set("spark.io.compression.codec", "lzf")
 	7.	Turn on speculative excution conf.set("spark.speculation", true)	
 	8. 	Use higher level API 
