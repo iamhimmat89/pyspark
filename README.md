@@ -1,5 +1,22 @@
 # Spark Examples in Python (pyspark)
 
+
+```
+Performance Checklist:
+	1.	Filter data 
+	2.	Avoiding shuffle - make run job faster 
+		-	use build in aggregation aggregateByKey instead of own 
+		-	use reduceByKey instead of groupByKey
+	3.	Degree of paralleliem - lines.coalesce(5)
+	4. 	Choice of serializer (bottleneck when shuffling or caching) - use Kryo or pickle in python
+	5.	Caching format - memory_only or memory_only_ser 
+		-	try avoid disk
+	6.	Compression conf.set("spark.io.compression.codec", "lzf")
+	7.	Turn on speculative excution conf.set("spark.speculation", true)	
+	8. 	Use higher level API 
+```
+
+
 ## **Spark Core**
 
 1.	**SparkContext**
@@ -100,6 +117,7 @@ Note - Use socket source only for testing. The socket source should not be used 
 	-	Read streams from \stream\in and perform operations
 	-	finally write processed data to \stream\out in JSON format
 
+	
 	```
 	**ERROR:**
 	2019-01-20 10:32:58 ERROR MicroBatchExecution:91 - Query [id = 69af1bc7-69e2-472d-b8db-627b0f3a6477, runId = 079df7cb-d42e-44a2-b0c5-e0883e55f697] terminated with error
